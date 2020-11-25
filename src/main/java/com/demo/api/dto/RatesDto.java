@@ -1,4 +1,4 @@
-package com.demo.dto;
+package com.demo.api.dto;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -7,5 +7,5 @@ import lombok.Setter;
 @Setter
 public class RatesDto {
 
-    public double USD;
+    public double usd;
 }

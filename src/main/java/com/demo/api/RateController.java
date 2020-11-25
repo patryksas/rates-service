@@ -1,5 +1,6 @@
 package com.demo.api;
 
+import com.demo.api.service.RateService;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
@@ -21,7 +22,13 @@ public class RateController {
 
     @GET
     @Path("{date}")
-    public Response getAll(@PathParam("date") String date) {
-        return Response.ok(rateService.getRate(date).getRates().getUSD()).build();
+    public Response getRate(@PathParam("date") String date) {
+        return Response.ok(rateService.getRate(date).getRates().getUsd()).build();
+    }
+
+    @GET
+    @Path("history")
+    public Response getAll() {
+        return Response.ok(rateService.getHistory()).build();
     }
 }

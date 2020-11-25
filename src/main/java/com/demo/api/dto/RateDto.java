@@ -1,4 +1,4 @@
-package com.demo.dto;
+package com.demo.api.dto;
 
 import lombok.Getter;
 import lombok.Setter;
