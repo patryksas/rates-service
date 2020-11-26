@@ -1,6 +1,6 @@
-package com.demo.dao;
+package com.demo.model.dao;
 
-import com.demo.model.Rate;
+import com.demo.model.entity.Rate;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;

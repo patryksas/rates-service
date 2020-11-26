@@ -1,7 +1,7 @@
 package com.demo.api.mapper;
 
 import com.demo.api.dto.RateHistoryDto;
-import com.demo.model.Rate;
+import com.demo.model.entity.Rate;
 import org.mapstruct.Mapper;
 import org.mapstruct.ReportingPolicy;
 
