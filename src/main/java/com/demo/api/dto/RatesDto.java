@@ -1,11 +1,11 @@
 package com.demo.api.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 public class RatesDto {
 
+    @JsonProperty("USD")
     public double usd;
 }

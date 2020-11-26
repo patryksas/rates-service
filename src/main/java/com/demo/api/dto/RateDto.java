@@ -1,10 +1,8 @@
 package com.demo.api.dto;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 public class RateDto {
 
     private int amount;

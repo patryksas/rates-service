@@ -7,7 +7,7 @@ import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 
 @Mapper(unmappedTargetPolicy = ReportingPolicy.IGNORE)
-public interface RateMapper {
+public interface DtoToEntityMapper {
 
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "created", ignore = true)
